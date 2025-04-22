@@ -16,7 +16,8 @@ fi
 
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
-export MANPAGER="sh -c 'col -bx | bat -l man -p'"
+# export MANPAGER="sh -c 'col -bx | bat -l man -p'"
+export MANPAGER="sh -c 'sed -u -e \"s/\\x1B\[[0-9;]*m//g; s/.\\x08//g\" | bat -p -lman'"
 export FZF_DEFAULT_OPTS='--preview "bat --color=always --style=numbers --line-range=:500 {}"'
 
 
@@ -149,7 +150,7 @@ alias wind="cd /media/pro696969/Acer/Users/Pro696969/Users/Pro696969/Desktop/Des
 alias myspace="cd /media/pro696969/Data/caniuse/"
 alias update="sudo apt-get update && sudo apt-get upgrade"
 alias n="nautilus . &"
-alias python="python3"
+# alias python="python3"
 alias mkdir="mkdir -pv"
 
 # z oxide
