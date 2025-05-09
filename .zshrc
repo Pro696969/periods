@@ -139,6 +139,7 @@ alias kys="exit"
 alias cat="bat"
 alias vsc="code ."
 
+alias dysk="dysk -c label+ --color no"
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
