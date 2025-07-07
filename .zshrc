@@ -97,7 +97,7 @@ source $ZSH/oh-my-zsh.sh
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
 
-[ "$TERM" = "xterm-kitty" ] && alias ssh="kitty +kitten ssh"
+# [ "$TERM" = "xterm-kitty" ] && alias ssh="kitty +kitten ssh"
 
 # Preferred editor for local and remote sessions
 if [[ -n $SSH_CONNECTION ]]; then
@@ -207,3 +207,8 @@ bindkey -v
 # intellij ultimate
 export PATH="$HOME/Downloads/stuff/idea-IU-243.25659.59/bin:$PATH"
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+
+export PATH="$HOME/.pyenv/bin:$PATH"
+eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"

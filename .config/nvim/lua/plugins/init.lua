@@ -13,13 +13,31 @@ return {
     end,
   },
 
-  -- {
-  -- 	"nvim-treesitter/nvim-treesitter",
-  -- 	opts = {
-  -- 		ensure_installed = {
-  -- 			"vim", "lua", "vimdoc",
-  --      "html", "css"
-  -- 		},
-  -- 	},
-  -- },
+  { 'echasnovski/mini.nvim', version = false },
+
+  -- {"nvim-treesitter/nvim-treesitter", branch = 'master', lazy = false, build = ":TSUpdate"},
+  {
+  	"nvim-treesitter/nvim-treesitter",
+  	opts = {
+  		ensure_installed = { "c", "lua", "vim", "vimdoc", "python", "markdown", "markdown_inline" },
+          sync_install = false,
+          highlight = { enable = true },
+          indent = { enable = true },
+    },
+  },
+
+  {
+    'MeanderingProgrammer/render-markdown.nvim',
+    ft = { "markdown" },
+    dependencies = { 'nvim-treesitter/nvim-treesitter', 'echasnovski/mini.nvim' }, -- if you use the mini.nvim suite
+    -- dependencies = { 'nvim-treesitter/nvim-treesitter', 'echasnovski/mini.icons' }, -- if you use standalone mini plugins
+    -- dependencies = { 'nvim-treesitter/nvim-treesitter', 'nvim-tree/nvim-web-devicons' }, -- if you prefer nvim-web-devicons
+    ---@module 'render-markdown'
+    ---@type render.md.UserConfig
+    opts = {
+      extensions = { "EXTENSION_GFM" },
+    },
+  },
 }
+
+
