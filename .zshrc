@@ -213,3 +213,6 @@ export PATH="$HOME/.pyenv/bin:$PATH"
 eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
 export JAVA_HOME='/opt/jdk-17'
+
+export SPARK_HOME=~/spark
+export PATH=$SPARK_HOME/bin:$PATH
