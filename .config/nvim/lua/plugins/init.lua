@@ -5,6 +5,14 @@ return {
     opts = require "configs.conform",
   },
 
+  {
+    "nvimtools/none-ls.nvim",
+    dependencies = { "nvim-lua/plenary.nvim" },
+    config = function()
+      require "configs.none-ls" -- load it *after* plugin is available
+    end,
+  },
+
   -- These are some examples, uncomment them if you want to see them work!
   {
     "neovim/nvim-lspconfig",
@@ -38,6 +46,7 @@ return {
       extensions = { "EXTENSION_GFM" },
     },
   },
+
 }
 
 
