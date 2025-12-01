@@ -138,6 +138,7 @@ alias sn="shutdown now"
 alias kys="exit"
 alias cat="bat"
 alias vsc="code ."
+alias rm="rm -i"
 
 alias dysk="dysk -c label+ --color no"
 
@@ -216,3 +217,4 @@ export JAVA_HOME='/opt/jdk-17'
 
 export SPARK_HOME=~/spark
 export PATH=$SPARK_HOME/bin:$PATH
+setopt autocd

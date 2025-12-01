@@ -7,7 +7,7 @@ return {
 
   {
     "nvimtools/none-ls.nvim",
-    event = "VeryLazy",
+    -- event = "VeryLazy",
     dependencies = { "nvim-lua/plenary.nvim" },
     config = function()
       require "configs.none-ls" -- load it *after* plugin is available
