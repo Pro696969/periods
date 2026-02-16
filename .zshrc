@@ -139,6 +139,9 @@ alias kys="exit"
 alias cat="bat"
 alias vsc="code ."
 alias rm="rm -i"
+alias cl="cd $@ && ls"
+alias icat="kitty +kitten icat"
+alias untar="tar -xvf"
 
 alias dysk="dysk -c label+ --color no"
 
@@ -207,14 +210,24 @@ bindkey -v
 
 # intellij ultimate
 export PATH="$HOME/Downloads/stuff/idea-IU-243.25659.59/bin:$PATH"
+export PATH="/opt/idea-IU-253.29346.138/bin:$PATH"
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
+export JAVA_HOME=/usr/lib/jvm/default
+export PATH=$JAVA_HOME/bin:$PATH
 
+# temporal
+export PATH="$HOME/hyperface/downloads:$PATH"
+
+# pyenv
 export PATH="$HOME/.pyenv/bin:$PATH"
 eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
-export JAVA_HOME='/opt/jdk-17'
+# export JAVA_HOME='/opt/jdk-11'
 
 export SPARK_HOME=~/spark
 export PATH=$SPARK_HOME/bin:$PATH
 setopt autocd
+setopt correct 
+
+export AWS_REGION=ap-south-1

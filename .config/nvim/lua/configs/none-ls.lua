@@ -7,7 +7,7 @@ local code_actions = null_ls.builtins.code_actions
 
 local sources = {
   -- Python
-  formatting.black,
+  -- formatting.black,
   diagnostics.ruff,
 
   -- Git
