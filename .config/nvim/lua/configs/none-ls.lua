@@ -9,6 +9,7 @@ local sources = {
   -- Python
   -- formatting.black,
   diagnostics.ruff,
+  code_actions.ruff,
 
   -- Git
   code_actions.gitsigns,
