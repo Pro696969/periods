@@ -206,6 +206,7 @@ PATHS() {
 # alias paths="echo $PATHS | tr : '\n'"
 # sofo -d
 
+# vim mode
 bindkey -v
 
 # intellij ultimate
@@ -213,6 +214,7 @@ export PATH="$HOME/Downloads/stuff/idea-IU-243.25659.59/bin:$PATH"
 export PATH="/opt/idea-IU-253.29346.138/bin:$PATH"
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
+# JAVA managed by archlinux-java
 export JAVA_HOME=/usr/lib/jvm/default
 export PATH=$JAVA_HOME/bin:$PATH
 
