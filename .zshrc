@@ -154,7 +154,8 @@ export NVM_DIR="$HOME/.nvm"
 alias wind="cd /media/pro696969/Acer/Users/Pro696969/Users/Pro696969/Desktop/DeskIcons"
 alias myspace="cd /media/pro696969/Data/caniuse/"
 alias update="sudo apt-get update && sudo apt-get upgrade"
-alias n="nautilus . &"
+alias n='nautilus &>/dev/null & disown'
+alias idea='idea &>/dev/null & disown'
 # alias python="python3"
 alias mkdir="mkdir -pv"
 
@@ -233,3 +234,4 @@ setopt autocd
 setopt correct 
 
 export AWS_REGION=ap-south-1
+export PATH="$HOME/.local/bin:$PATH"
